@@ -1,0 +1,70 @@
+:root {
+    ---turquoise: #16a085;
+    ---fairy-black: #150000;
+    ---light-gray: #aeafb0;
+    ---deep-gray: #61667f;
+    ---fray-black: #000d20;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(---turquoise);
+    font-family: Roboto, sans-serif;
+    text-align: left;
+}
+.box {
+    background-image: url("./media/bicycle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-position-y: 10rem;
+    background-color: white;
+    height: 70vh;
+    width: 45vw;
+    margin: 6rem auto;
+    padding: 3rem 4rem;
+
+}
+.heading {
+    line-height: 1rem;
+    display: flex;
+    /* justify-content: center; */
+}
+.heading h2 {
+    flex-grow: 1;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+}
+.imgwrap {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid var(---light-gray);
+}
+.imgwrap:hover{
+    cursor: pointer;
+    background-color: var(---light-gray);
+}
+.product-info {
+    color: var(---light-gray);
+    font-size: 15px;
+    padding: 1.5rem 0;
+}
+.type {
+    line-height: 3rem;
+    color: var(---deep-gray);
+    display: flex;
+    justify-content: space-between;
+}
+.price {
+    color: var(---fairy-black);
+    font-weight: 700;
+}
